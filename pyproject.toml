@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tupleExtractor"
 version = "1.0.5"
-authors = [{name = "Soike", email = ""}]
+authors = [{name = "Soike", email = "luvusoike@icloud.com"}]
 description = "Snowball: Extracting Relations from Large Plain-Text Collections"
 requires-python = ">=3.9"
 keywords = ["nlp", "semantic relationship extraction", "bootstrapping", "emnlp",
