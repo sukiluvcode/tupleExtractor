@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tupleExtractor"
+version = "1.0.5"
+authors = [{name = "Soike", email = ""}]
+description = "Snowball: Extracting Relations from Large Plain-Text Collections"
+requires-python = ">=3.9"
+keywords = ["nlp", "semantic relationship extraction", "bootstrapping", "emnlp",
+    "tf-idf", ]
+license = {text = "GNU GPLv3"}
+classifiers = [
+    "Topic :: Text Processing :: Linguistic",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "gensim >= 3.7.3",
+    "nltk >= 3.4.1",
+    "numpy >= 1.16.3",
+]
+
+[project.scripts]
+tuplee = "tupleextractor.cli.cli:main"
