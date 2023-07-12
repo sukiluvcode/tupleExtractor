@@ -5,16 +5,17 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "tupleExtractor"
 version = "0.0.1"
-authors = [{name = "Soike", email = "luvusoike@icloud.com"}]
+authors = ["Soike Yuan <luvusoike@icloud.com>"]
 description = "Snowball: Extracting Relations from Large Plain-Text Collections"
 license = "MIT"
 repository = "https://github.com/sukiluvcode/tupleExtractor"
 
 [tool.poetry.scripts]
-langchain-server = "langchain.server:main"
+tuplee = "tupleextractor.cli.cli:main"
 
 [tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.16.3"
 gensim = "^3.7.3"
 nltk = "^3.4.1"
-numpy = "^1.16.3"
 snowball-extractor = "1.0.5"
